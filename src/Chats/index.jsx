@@ -13,7 +13,7 @@ export const Chats = ({ chats, onChatClick, selectedChat }) => {
           className={`chat-item ${selectedChat === chat.id ? "selected" : ""}`}
           onClick={() => onChatClick(chat.id)}
         >
-          {chat.name}
+          <span>{chat.name}</span>
         </div>
       ))}
     </div>
